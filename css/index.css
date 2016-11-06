@@ -1,0 +1,788 @@
+body{
+	height: 100%;
+	overflow: hidden;
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*头部开始*/
+header{
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	z-index: 1;
+	background: #168bd8;
+}
+nav{
+	width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.logo a{
+	display: block;
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+	float: left;
+	background: url(../images/header.png) -2px 0 no-repeat;
+}
+.mata ul{
+	 margin-left: 60px;
+}
+.mata-item{
+	position: relative;
+}
+.mata-link{
+	display: inline-block;
+	width: 100px;
+	font-size: 15px;
+	height: 28px;
+	padding-top: 32px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+.act {
+    color: #67cbff;
+}
+.mata-link:hover{
+	color: #67cbff;
+}
+.nav-help{
+	float: right;
+    margin-top: 25px;
+}
+.nav-help a{
+    color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.nav-app i{
+	display: inline-block;
+	width: 32px;
+	height: 25px;
+	background: url(../images/header.png) -88px -154px no-repeat;
+}
+.yellow{
+	color: #FFDA28;
+}
+/*头部结束*/
+/*内容开始*/
+
+/*第一屏*/
+#section-0{
+	height: 298px;
+	background: #3fb0ee url(../images/1.jpg) repeat center top;
+}
+#fp{
+	height: 298px;
+}
+.section{
+	position: relative;
+}
+.section .top {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.bg-cloud-1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	background: url(..//images/cloud_1_1d4924b.png) repeat;
+	animation: cloudmove 100s linear infinite;
+}
+ @keyframes cloudmove{
+	0% {
+	    background-position: 2000px 0;
+	}
+	50% {
+	    background-position: 0 0;
+	}
+	100% {
+	    background-position: -2000px 0;
+	}
+}
+.section .middle {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+}
+.bg-cloud-2{
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	background: url(../images/cloud_2_a186193.png) repeat;
+	animation: cloudmove 100s linear infinite;
+}
+.section .bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.bg-cloud-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: url(../images/cloud_3_5ee0340.png) repeat;
+    animation: cloudmove 100s linear infinite;
+}
+#section-0 .follow-head {
+    height: 126px;
+    background: #0d71cd url(../images/bg-1_e29bcfa.jpg);
+}
+.section .follow-head {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.section .center {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.obj{
+    position: absolute;
+}
+.obj-hill-2 {
+    width: 63px;
+    height: 78px;
+    background: url(../images/hill_2_540422f.png);
+    right: 288px;
+    top: -13px;
+}
+.obj-hill-3 {
+    width: 260px;
+    height: 175px;
+    background: url(../images/hill_3_ace39fb.png);
+    right: -129px;
+    top: -47px;
+}
+.obj-hill-1 {
+    width: 265px;
+    height: 175px;
+    background: url(../images/hill_1_0d79217.png);
+    left: -182px;
+    top: -50px;
+}
+.active .obj-ship {
+    left: 126px;
+}
+.obj-ship {
+    width: 242px;
+    height: 228px;
+    background: url(../images/ship_1ad6734.png);
+    left: 100px;
+    top: -191px;
+}
+#login {
+    background: #4ebffc;
+}
+.uc-common-login {
+    font: 14px/1.5 'Microsoft YaHei','微软雅黑',Helvetica,Sans-serif;
+    background: #fff;
+}
+.obj-launch {
+    width: 501px;
+    height: 158px;
+    background: url(../images/launch_deea86c.png);
+    left: 0;
+    top: -415px;
+}
+.obj-flight {
+    width: 119px;
+    height: 78px;
+    background: url(../images/flight_ade8ee2.png);
+    left: 295px;
+    animation: flight 3s infinite;
+    margin-top:-200px;
+}
+ @keyframes flight{
+	0% {
+	    top: -220px;
+	}
+	40% {
+	    top: -230px;
+	}
+	100% {
+	    top: -220px;
+	}
+}
+.login-area {
+    height: 300px;
+    width: 340px;
+    border-radius: 5px;
+    background: #4ebffc;
+    position: absolute;
+    right: 0;
+    top:-398px;
+}
+#login .login {
+    box-shadow: none;
+    width: auto;
+}
+.uc-common-login .login {
+    position: relative;
+}
+#login .login-shadow {
+    display: none;
+}
+.watermark {
+	display: none;
+}
+.uc-common-login .login .watermark {
+    background: url(../images/icons.png) no-repeat 0 0;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 64px;
+    height: 21px;
+    z-index: 1;
+}
+#login .login form {
+    background: transparent;
+    padding-top: 26px;
+}
+.uc-common-login .login form {
+    position: relative;
+    border-radius: 3px;
+}
+.uc-common-login .login-info, .uc-common-login .login-action {
+    padding: 0 20px;
+}
+#login .login-info h2 {
+    display: none;
+}
+.uc-common-login .login h2 {
+    color: #666f8d;
+    margin: 0 0 10px;
+    font-size: 13px;
+    font-weight: normal;
+}
+#login .login-info .account{
+    width: 299px;
+    border: 0;
+}
+.uc-common-login .login-info .account {
+    box-sizing: border-box;
+    height: 40px;
+    background: #fff;
+}
+.uc-common-login .login-info .account span{
+    background: url(../images/icons.png) -124px -12px no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: 12px 3px 0 10px;
+    float: left;
+}
+#login .login-info .account input{
+	width: 252px;
+}
+.uc-common-login .login-info .account input{
+	border: 0;
+	outline: none;
+	padding: 9px;
+	height: 20px;
+	box-shadow: none;
+}
+#login .error {
+    color: #dd4545;
+}
+.uc-common-login .error {
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    color: #f28281;
+    visibility: hidden;
+    font-size: 13px;
+    max-width: 270px;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+#login .login-info .password {
+    width: 299px;
+    border: 0;
+}
+.uc-common-login .login-info .password{
+	height: 40px;
+	background: #fff;
+	box-sizing: border-box;
+}
+ .uc-common-login .login-info .password span {
+    background: url(../images/icons.png) -140px -12px no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: 12px 3px 0 10px;
+    float: left;
+}
+#login .login-info .password input{
+	width: 252px;
+}
+#login #uc-safe-pwd-input {
+    width: 252px;
+}
+.uc-common-login .login-info .password .safe-input {
+    margin-left: 9px;
+    padding: 0;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+}
+.uc-common-login .login-info .password input{
+	border: 0;
+    outline: none;
+	padding: 9px;
+	height: 20px;
+	float: left;
+}
+#login .login-info .token input {
+    width: 122px;
+    border: 0;
+}
+.uc-common-login .login-info .token input{
+	float: left;
+	outline: none;
+	padding: 9px;
+	height: 20px;
+	background: #fff;
+}
+.uc-common-login .login-info .token img{
+	margin-left: 10px;
+	width: 99px;
+	height: 39px;
+	float: left;
+}
+.uc-common-login .login-info .token a {
+    margin: 10px 0 0 10px;
+    font-size: 12px;
+    margin-left:10px;
+    color: #fff;
+    float: left;
+}
+.uc-common-login .login-info .token a:hover{
+	text-decoration: underline;
+}
+#login .login-action .submit {
+    border: 0;
+    background: #ffd850;
+    color: #5c4c12;
+    border-radius: 2px;
+    width: 299px;
+}
+.uc-common-login .login-action .submit {
+	margin-top: 35px;
+	float: left;
+	margin-left: -20px;
+	display: block;
+	padding: 0 10px;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+    vertical-align: middle;
+    outline: none;
+   cursor: pointer;
+   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+   box-sizing: border-box;
+}
+.uc-common-login .login-action .other {
+    margin: 12px 0 8px;
+    font-size: 12px;
+    color: #9dbcdb;
+}
+.uc-common-login .login-action span,.uc-common-login .login-action a{
+    vertical-align: top;
+    color: #fff;
+}
+.uc-common-login .login-action a:hover{
+	text-decoration: underline;
+}
+.uc-common-login .login-action span {
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    background: url(../images/icons.png) no-repeat -203px -75px;
+    margin: 2px 4px 0 0;
+}
+#fff{
+	margin-top: 10px;
+	margin-left: -20px;
+}
+#rr{
+	margin-top: 10px;
+}
+.arrowGo {
+    bottom: 42px;
+    animation: arrowGo 1s infinite steps(10,end);
+}
+.btn-arrow {
+    display: block;
+    width: 30px;
+    height: 26px;
+    background: url(../images/arrow_aad9b25.png);
+    position: absolute;
+    left: 485px;
+}
+ @keyframes arrowGo{
+	0% {
+	    opacity: 1;
+	    transform-origin: center center;
+	    transform: translate(-50%,0);
+	    bottom: 42px;
+	}
+	50% {
+	    opacity: .5;
+	    transform-origin: center center;
+	    transform: translate(-50%,0);
+	    bottom: 36px;
+	}
+	100% {
+	    opacity: 1;
+	    transform-origin: center center;
+	    transform: translate(-50%,0);
+	    bottom: 42px;
+	}
+}
+/*第二屏*/
+#section-1 {
+    background: #0d71cd url(../images/bg-1_e29bcfa.jpg) repeat center -126px;
+}
+.fp-tableCell{
+	margin: 0 auto;
+}
+.section .center {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.active .title-area-1 {
+    top: -100px;
+    left: 200px;
+    opacity: 1;
+}
+.title-area {
+    position: absolute;
+    top: -100px;
+    position: absolute;
+    left:50px;
+    opacity: 0;
+    transition: all .5s ease-out .5s;
+}
+.section .title {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-family: 'Microsoft Yahei';
+    color: #fff;
+    width: 500px;
+}
+#section-1 .title h3 {
+    background: url(../images/h_lingxian_221f2d8.png) no-repeat;
+}
+.section .title h3 {
+    width: 66px;
+    height: 126px;
+    text-indent: -9999em;
+    float: left;
+}
+.y-ain{
+	animation: y-ain 2s infinite;
+    transform-style: preserve-3d;
+}
+ @keyframes y-ain{
+	0% {
+	    transform: rotateY(0);
+	}
+	40% {
+	    transform: rotateY(0);
+	}
+	100% {
+	    transform: rotateY(360deg);
+	}
+}
+.section .title .text {
+    margin-left: 86px;
+    margin-top: -20px;
+}
+.section .title .text h4 {
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 48px;
+    margin-bottom: -12px;
+}
+.section .title .text p {
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    opacity: .8;
+}
+.active .obj-brain {
+    opacity: 1;
+    position: absolute;
+    top: -200px;
+    right: -150px;
+}
+.obj-brain {
+    width: 444px;
+    height: 427px;
+    background: url(../images/brain_36a156f.png);
+    top: -200px;
+    position: absolute;
+    position: absolute;
+    right: -300px;
+    opacity: 0;
+    transition: all .5s ease-out .5s;
+}
+.section .bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+#section-1 .square-1 {
+    background: #35b568;
+    left: 70px;
+    width: 44px;
+    height: 44px;
+}
+#section-1 .square {
+    bottom: 0;
+}
+.section .square {
+    position: absolute;
+    display: block;
+}
+#section-1 .square-2 {
+    background: #4ac179;
+    left: 158px;
+}
+#section-1 .square {
+    bottom: 0;
+}
+.section .square {
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 88px;
+}
+#section-1 .square-3 {
+    background: #8ae75a;
+    left: 246px;
+    width: 44px;
+    height: 44px;
+}
+#section-1 .square {
+    bottom: 0;
+}
+.section .square {
+    position: absolute;
+    display: block;
+}
+#section-1 .square-4 {
+    background: #8ae75a;
+    right: 328px;
+    width: 44px;
+    height: 44px;
+}
+#section-1 .square {
+    bottom: 0;
+}
+.section .square {
+    position: absolute;
+    display: block;
+}
+#section-1 .square-5 {
+    background: #4ac179;
+    right: 240px;
+    width: 44px;
+    height: 44px;
+}
+#section-1 .square {
+    bottom: 0;
+}
+.section .square {
+    position: absolute;
+    display: block;
+}
+/*第三屏*/
+#section-2 {
+    background: #0d71cd url(../images/bg-2_867b7b4.jpg) no-repeat center top;
+}
+.section .top {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.section .center {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+#section-2 .square-1 {
+    background: #33bb9a;
+    left: 70px;
+    top: 60px;
+}
+.section .square {
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 88px;
+}
+#section-2 .square-2 {
+    background: #29a2b8;
+    left: -18px;
+    top: 148px;
+}
+#section-2 .square-3 {
+    background: #60cf6e;
+    left: 158px;
+    top: 148px;
+}
+#section-2 .square-4 {
+    background: #8ae75a;
+    left: 70px;
+    top: 236px;
+    width: 176px;
+    height: 176px;
+    background-image: url(../images/square_c776382.jpg);
+}
+#section-2 .square-5 {
+    background: #33bb9a;
+    left: 246px;
+    top: 236px;
+}
+#section-2 .follow-head {
+    height: 138px;
+    background: transparent url(../images/bg-3-head_b8a3f7f.png);
+}
+.section .follow-head {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.active .title-area-2{
+    top: -100px;
+    left: 200px;
+    opacity: 1;
+}
+.title-area {
+    position: absolute;
+    top: -100px;
+    position: absolute;
+    left:50px;
+    opacity: 0;
+    transition: all .5s ease-out .5s;
+}
+.section .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Microsoft Yahei';
+    color: #fff;
+    width: 500px;
+}
+#section-2 .title h3 {
+    background: url(../images/h_quanmian_8f813d2.png) no-repeat;
+}
+.active .obj-allside {
+    position: absolute;
+    top: -200px;
+    right: -150px;
+    opacity: 1;
+}
+.obj-allside {
+    width: 444px;
+    height: 330px;
+    background: url(../images/allside_e8abd12.png);
+    top: -200px;
+    position: absolute;
+    right: -300px;
+    opacity: 0;
+    transition: all .5s ease-out .5s;
+}
+/*第四屏*/
+#section-3 {
+    background: #009a70 url(../images/bg-3_153a003.jpg) repeat center top;
+}
+.copyright {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'Microsoft Yahei';
+}
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+}
+.active .title-area-3 {
+    top: -100px;
+    left: 200px;
+    opacity: 1;
+}
+.title-area {
+    position: absolute;
+    top: -100px;
+    position: absolute;
+    left:50px;
+    opacity: 0;
+    transition: all .5s ease-out .5s;
+}
+.title-area-3 .obj-bubble {
+    left: -36px;
+    top: -56px;
+    width: 275px;
+    height: 245px;
+    background: url(../images/bubble_3b0f897.png);
+}
+#section-3 .title h3 {
+    background: url(../images/h_zhuanye_256a94d.png) no-repeat;
+}
+.active .obj-stat {
+    top: -200px;
+    right: -150px;
+    opacity: 1;
+}
+.obj-stat {
+    width: 603px;
+    height: 361px;
+    background: url(../images/stat_8934528.png);
+    right: -300px;
+    top: -200px;
+    opacity: 0;
+    transition: all .5s ease-out .5s;
+}
+/*内容结束*/
+
